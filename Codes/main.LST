@@ -1,0 +1,41 @@
+C51 COMPILER V8.08   MAIN                                                                  09/24/2010 17:35:40 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<intrins.h>
+   2          #include"p89v51rx2.h"
+   3          #include"LCD_20x4.h"
+   4          void main(void)
+   5          {
+   6   1       LCD_INIT();
+   7   1       LCD_CMD(LINE1);
+   8   1       LCD_WRITE("WELCOME To E-YANTRA");
+   9   1       LCD_CMD(LINE2);
+  10   1       LCD_WRITE("ERTS LAB, IIT Bombay");
+  11   1       LCD_CMD(LINE3);
+  12   1       LCD_WRITE("This is the demo of");
+  13   1       LCD_CMD(LINE4);
+  14   1       LCD_WRITE("4-Line LCD intfacing");
+  15   1      
+  16   1       while(1);
+  17   1      
+  18   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    241    ----
+   CONSTANT SIZE    =     82    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     13       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
